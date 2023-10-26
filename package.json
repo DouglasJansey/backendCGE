@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run dev",
     "prebuild": "npm install",
-    "postinstall": "prisma generate",
+    "postinstall": "npx prisma generate",
     "dev": "ts-node-dev src/app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
