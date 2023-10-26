@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "build": "bun run dev",
-    "prebuild": "sudo apt install unzip curl -fsSL https://bun.sh/install | bash",
+    "build": "npm run dev",
+    "prebuild": "npm install npx prisma generate",
     "dev": "ts-node-dev src/app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
