@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
-  "rewrites": [{ "source": "src/api/(.*)", "destination": "/api" }],
   "scripts": {
-    "build": "bun run start",
-    "start": "bun run dev",
+    "build":"tsc",
     "prebuild": "bun install && bun install react-dom @types/react-dom",
     "postinstall": "npx prisma generate",
     "dev": "ts-node-dev src/app",
