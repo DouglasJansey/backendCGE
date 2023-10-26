@@ -5,7 +5,7 @@
   "main": "index.ts",
   "rewrites": [{ "source": "src/api/(.*)", "destination": "/api" }],
   "scripts": {
-    "build": "tsc",
+    "build": "bun run start",
     "start": "bun run dev",
     "prebuild": "bun install && bun install react-dom @types/react-dom",
     "postinstall": "npx prisma generate",
