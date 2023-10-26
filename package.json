@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
+  "rewrites": [{ "source": "src/api/(.*)", "destination": "/api" }],
   "scripts": {
     "build": "npm run dev",
     "prebuild": "npm install",
