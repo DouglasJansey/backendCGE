@@ -10,4 +10,4 @@ app.use(cors())
 app.use(express.json())
 app.use('/product', router);
 
-app.listen(3001, () => console.log("serverRun"));
+app.listen(process.env.PORT || 3001, () => console.log("serverRun"));
