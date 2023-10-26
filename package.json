@@ -5,7 +5,8 @@
   "main": "index.ts",
   "rewrites": [{ "source": "src/api/(.*)", "destination": "/api" }],
   "scripts": {
-    "prebuild":"bun install Next && bun install react-dom",
+    "build":"bun install Next && bun run dev",
+    "prebuild":"bun install react-dom",
     "postinstall": "npx prisma generate",
     "dev": "ts-node-dev src/app",
     "test": "echo \"Error: no test specified\" && exit 1"
